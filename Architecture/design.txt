@@ -1,0 +1,23 @@
+Backend:
+ Lambda
+ DynamoDB
+ DynamoDB Stream
+ API Gateway
+
+Connect:
+ JavaFx에서 API 호출
+
+Frontend:
+ JavaFx
+
+API Gateway
+ HTTP API를 생성(REST API), JavaFx에서 backend와 통신할 수 있는 인터페이스 제공
+
+DynamoDB
+ NoSQL DB, Lambda 함수가 데이터를 읽고 쓸 수 있음
+
+DynamoDB Stream
+ DynamoDB Table의 데이터 변경을 실시간으로 모니터링, 이에 맞는 이벤트 작동
+
+Lambda
+ 서버리스 컴퓨팅 서비스 제공, API Gateway의 요청을 처리 - DynamoDB와 상호작용
